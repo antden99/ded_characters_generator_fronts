@@ -23,26 +23,32 @@ export default {
 
 <template>
     <header>
-       <div class="container">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">Navbar</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <RouterLink class="nav-link active" aria-current="page" :to="{name:'home'}">Home</RouterLink>
-                        </li>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Navbar</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <RouterLink class="nav-link active" aria-current="page" :to="{ name: 'home' }">Home
+                                </RouterLink>
+                            </li>
+                            <li class="nav-item">
+                                <RouterLink class="nav-link active" aria-current="page" :to="{ name: 'characters' }">
+                                    Characters
+                                </RouterLink>
+                            </li>
 
-              
-                    </ul>
+
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </nav>
-       </div>
+            </nav>
+        </div>
 
     </header>
 </template>
