@@ -2,10 +2,7 @@
 import axios from 'axios';
 
 export default {
-
   name: 'HomeView',
-
-
   data() {
     return {
       base_api: 'http://127.0.0.1:8000',
@@ -14,16 +11,13 @@ export default {
 
     }
   },
-
- 
-
 }
 </script>
 
 <template>
-ciao
+  <div>
+    ciao
+  </div>
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>
