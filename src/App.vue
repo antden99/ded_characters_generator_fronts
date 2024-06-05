@@ -1,51 +1,39 @@
 <script>
 import axios from 'axios';
 import AppHeader from './components/AppHeader.vue';
+import AppFooter from './components/AppFooter.vue';
 
 export default {
 
   name: 'App',
 
-  components:{
-    AppHeader:AppHeader,
+  components: {
+    AppHeader: AppHeader,
+    AppFooter,
+
 
   },
-  
+
   data() {
     return {
-      base_api: 'http://127.0.0.1:8000',
-      nome_api: '/api/characters',
-      characters: [],
+
 
     }
   },
 
-  methods: {
-    callApi() {
-      axios
-        .get(this.base_api + this.nome_api)
-        .then(response => {
-          this.characters = response.data.characters
-          console.log(this.characters)
-        })
-        .catch(err => {
-          console.error(err)
-        })
-    }
-  },
 
-  mounted() {
-    this.callApi()
-  },
+
+
 
 }
 </script>
 
 <template>
   <AppHeader></AppHeader>
-  <RouterView></RouterView>
+  <RouterView>
+  </RouterView>
+  <AppFooter></AppFooter>
+
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>
