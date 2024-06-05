@@ -1,23 +1,19 @@
 <script>
-import axios from 'axios';
+import AppBanner from '../components/AppBanner.vue';
 
 export default {
   name: 'HomeView',
+  components: {
+    AppBanner
+  },
   data() {
     return {
-      base_api: 'http://127.0.0.1:8000',
-      nome_api: '/api/characters',
-      characters: [],
-
     }
   },
 }
 </script>
-
 <template>
-  <div>
-    ciao
-  </div>
+  <AppBanner />
 </template>
 
 <style scoped></style>

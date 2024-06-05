@@ -1,23 +1,13 @@
 <script>
-import axios from 'axios';
 import { RouterLink } from 'vue-router';
 
 export default {
-
     name: 'AppHeader',
-
-
     data() {
         return {
-            base_api: 'http://127.0.0.1:8000',
-            nome_api: '/api/characters',
-            characters: [],
 
         }
-    },
-
-
-
+    }
 }
 </script>
 
